@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="本政策适用于Popover App及其系统翻译扩展。Popover使用Apple的Foundation Models翻译你选中的文字。Popover没有账号系统、开发者运营的翻译服务器、广告或第三方分析SDK。开发者不会收到你选中的原文或译文。">
+<title>Popover隐私政策</title>
+<style>:root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: #1d1d1f; line-height: 1.7; }
+main { max-width: 760px; margin: 0 auto; padding: 40px 24px 64px; }
+nav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-bottom: 36px; }
+a { color: #005bbb; text-underline-offset: 3px; overflow-wrap: anywhere; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 5px; border-radius: 2px; }
+[aria-current="page"] { color: inherit; font-weight: 650; text-decoration: none; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -.025em; margin: 0 0 12px; }
+h2 { font-size: 1.25rem; line-height: 1.4; margin: 32px 0 10px; }
+p { margin: 0 0 16px; overflow-wrap: break-word; }
+.updated { color: #626269; font-size: .95rem; margin-bottom: 28px; }
+footer { border-top: 1px solid #dedee3; margin-top: 36px; padding-top: 4px; }
+ul { padding-inline-start: 22px; }
+li { margin: 8px 0; }
+@media (prefers-color-scheme: dark) {
+  body { background: #161618; color: #f5f5f7; }
+  a { color: #8ac4ff; }
+  .updated { color: #b3b3bc; }
+  footer { border-color: #45454d; }
+}
+@media print { main { max-width: none; padding: 0; } nav { display: none; } }</style>
+</head>
+<body>
+<main>
+<nav aria-label="Language / 语言 / 語言"><a href="index.html" lang="en" hreflang="en">English</a> <a href="zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans" aria-current="page">简体中文</a> <a href="zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></nav>
+<header>
+<h1>Popover隐私政策</h1>
+<p class="updated">更新日期：2026年9月18日</p>
+</header>
+<p>本政策适用于Popover App及其系统翻译扩展。Popover使用Apple的Foundation Models翻译你选中的文字。Popover没有账号系统、开发者运营的翻译服务器、广告或第三方分析SDK。开发者不会收到你选中的原文或译文。</p>
+<section aria-labelledby="on-device">
+<h2 id="on-device">设备端翻译</h2>
+<p>使用设备端模型时，你选中的文字在设备上处理，Popover不会将这些文字发送到翻译服务器。如需让之后的翻译请求都在设备上处理，请在Popover的“设置”→“翻译引擎”中选择“仅设备端”。设备上的模型需要处于可用状态。</p>
+</section>
+<section aria-labelledby="cloud">
+<h2 id="cloud">专用云计算</h2>
+<p>引擎默认设置为“自动”。在运行iOS 27或更高版本且符合条件的设备上，“自动”会在Apple专用云计算可用且有剩余配额时优先使用它。“仅云端”也使用此服务。处理这些请求时，选中的文字、翻译指令和语言信息会发送到Apple的专用云计算服务器，以生成译文。</p>
+<p>Apple声明，专用云计算仅使用请求数据来完成该次请求，处理结束后不会保留这些数据，Apple也无法访问这些数据。Popover开发者无法访问这些请求数据。下方提供了Apple的说明链接。</p>
+</section>
+<section aria-labelledby="choices">
+<h2 id="choices">选择翻译引擎</h2>
+<p>专用云计算不可用或发生临时故障时，“自动”会回落到设备端模型；内容被拒绝翻译时不会触发回落。“仅云端”不会回落，云端失败时会显示错误。在iOS 26上，“自动”和“仅设备端”使用设备端模型，“仅云端”不可用。你可以随时在Popover设置中更改引擎。选择“仅设备端”后，之后的翻译不会使用专用云计算。</p>
+</section>
+<section aria-labelledby="storage">
+<h2 id="storage">存储与保留</h2>
+<p>Popover不保存翻译历史，不将原文或译文写入自己的文件，也不会在正式发布的App所生成的日志中记录这些内容。文字仅为处理和显示当前翻译而暂存在内存中。App会在本地保存你的语言配对、引擎选择、云端推理设置和是否完成引导的标记。语言和引擎设置仅通过共享App存储在Popover与其翻译扩展之间共享。</p>
+<p>Popover没有需要删除的翻译历史数据库，也没有开发者持有的译文副本。你可以在设置中更改偏好，或删除App以移除其本地数据。其他App、系统剪贴板或设备备份中保留的副本，由相应App及Apple单独管理。</p>
+</section>
+<section aria-labelledby="copy-replace">
+<h2 id="copy-replace">拷贝与替换</h2>
+<p>点按“拷贝”会将译文放入系统剪贴板，系统和你粘贴到的App会按各自的规则处理它。点按“替换”会将译文交回你选中文字的App，由该App决定如何保存或分享替换后的内容。Popover不会清除或删除你放入其他App或剪贴板的副本。</p>
+</section>
+<section aria-labelledby="services">
+<h2 id="services">跟踪与Apple服务</h2>
+<p>Popover不会跨App或网站跟踪你，不使用广告标识符，也不出售你的数据。App不包含广告或第三方分析SDK。Apple依据自身的隐私条款独立运营App Store、系统诊断和专用云计算。本政策说明Popover如何处理数据，不代替Apple的隐私政策。打开下方外部链接会使用浏览器，并向Apple网站发出请求。</p>
+</section>
+<section aria-labelledby="changes">
+<h2 id="changes">政策更新</h2>
+<p>如果Popover的数据处理方式发生变化，我们会更新本政策及其更新日期。App内的政策副本对应随该App版本提供的内容。</p>
+</section>
+<footer>
+<h2>Apple隐私说明</h2>
+<ul><li><a href="https://security.apple.com/documentation/private-cloud-compute/" rel="noreferrer">专用云计算安全指南</a></li>
+<li><a href="https://www.apple.com/legal/privacy/" rel="noreferrer">Apple隐私政策</a></li></ul>
+</footer>
+</main>
+</body>
+</html>

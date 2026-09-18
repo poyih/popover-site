@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Popover 用 Apple 的 Foundation Models 接管 iPhone 和 iPad 上系统级的“翻译”操作：设备端模型，以及 iOS 27 上的专用云计算。">
+<title>Popover 支持</title>
+<style>:root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: #1d1d1f; line-height: 1.7; }
+main { max-width: 760px; margin: 0 auto; padding: 40px 24px 64px; }
+nav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-bottom: 36px; }
+a { color: #005bbb; text-underline-offset: 3px; overflow-wrap: anywhere; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 5px; border-radius: 2px; }
+[aria-current="page"] { color: inherit; font-weight: 650; text-decoration: none; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -.025em; margin: 0 0 12px; }
+h2 { font-size: 1.25rem; line-height: 1.4; margin: 32px 0 10px; }
+p { margin: 0 0 16px; overflow-wrap: break-word; }
+.updated { color: #626269; font-size: .95rem; margin-bottom: 28px; }
+footer { border-top: 1px solid #dedee3; margin-top: 36px; padding-top: 4px; }
+ul { padding-inline-start: 22px; }
+li { margin: 8px 0; }
+@media (prefers-color-scheme: dark) {
+  body { background: #161618; color: #f5f5f7; }
+  a { color: #8ac4ff; }
+  .updated { color: #b3b3bc; }
+  footer { border-color: #45454d; }
+}
+@media print { main { max-width: none; padding: 0; } nav { display: none; } }</style>
+
+</head>
+<body>
+<main>
+<nav aria-label="Language / 语言 / 語言"><a href="index.html" lang="en" hreflang="en">English</a> <a href="zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans" aria-current="page">简体中文</a> <a href="zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></nav>
+<header><h1>Popover 支持</h1></header>
+<p>Popover 用 Apple 的 Foundation Models 接管 iPhone 和 iPad 上系统级的“翻译”操作：设备端模型，以及 iOS 27 上的专用云计算。</p>
+<section aria-labelledby="s0"><h2 id="s0">使用要求</h2><p>支持 Apple Intelligence 的 iPhone 或 iPad，运行 iOS 26 或更高版本，已在“设置”中开启 Apple Intelligence 并下载好设备端模型。</p><p>专用云计算需要 iOS 27、网络连接和当日剩余配额。在 iOS 26 上，每次翻译都在设备上完成。</p></section>
+<section aria-labelledby="s1"><h2 id="s1">把 Popover 设为默认翻译 App</h2><p>打开 设置 ▸ App ▸ 默认 App ▸ 翻译，选择 Popover。Popover 的 设置 ▸ 帮助 可以直接带你到这一页。</p><p>然后在 Safari、备忘录、邮件等 App 里选中文字，在编辑菜单点“翻译”。Popover 的弹窗会显示译文；宿主 App 允许时还会有“替换”按钮。</p><p>删除 Popover 会让系统把默认翻译 App 重置回 Apple 的“翻译”。重装后请在同一设置页重新选择 Popover。</p></section>
+<section aria-labelledby="s2"><h2 id="s2">翻译引擎</h2><p>“自动”（默认）优先使用专用云计算，云端不可用时回退到设备端模型。</p><p>“仅云端”从不回退；专用云计算无法作答时会显示错误。此时在 Popover 设置中切换引擎即可立即翻译。</p><p>“仅设备端”让每次翻译都留在设备上。</p></section>
+<section aria-labelledby="s3"><h2 id="s3">常见问题</h2><p>编辑菜单里没有“翻译”：宿主 App 没有为这段选区提供系统翻译操作，或 Popover 还不是默认翻译 App。</p><p>状态页显示“需要注意”：在“设置”中开启 Apple Intelligence，等设备端模型下载完成后再回到 Popover。</p><p>没有“替换”按钮：宿主 App 不允许替换这段选区，请改用“拷贝”。</p><p>翻译被拒绝：模型拒绝处理所选内容。这与配额无关，“自动”不会因拒绝而回退。</p></section>
+<section aria-labelledby="s4"><h2 id="s4">隐私</h2><p>Popover 没有服务器、账号、广告或分析组件。设备端模型与专用云计算如何处理你的文字，请阅读<a href="../privacy/zh-Hans.html">隐私政策</a>。</p></section>
+</main>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Popover answers the system-wide Translate action on iPhone and iPad with Apple’s Foundation Models: the on-device model, and Private Cloud Compute on iOS 27.">
+<title>Popover Support</title>
+<style>:root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: #1d1d1f; line-height: 1.7; }
+main { max-width: 760px; margin: 0 auto; padding: 40px 24px 64px; }
+nav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-bottom: 36px; }
+a { color: #005bbb; text-underline-offset: 3px; overflow-wrap: anywhere; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 5px; border-radius: 2px; }
+[aria-current="page"] { color: inherit; font-weight: 650; text-decoration: none; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -.025em; margin: 0 0 12px; }
+h2 { font-size: 1.25rem; line-height: 1.4; margin: 32px 0 10px; }
+p { margin: 0 0 16px; overflow-wrap: break-word; }
+.updated { color: #626269; font-size: .95rem; margin-bottom: 28px; }
+footer { border-top: 1px solid #dedee3; margin-top: 36px; padding-top: 4px; }
+ul { padding-inline-start: 22px; }
+li { margin: 8px 0; }
+@media (prefers-color-scheme: dark) {
+  body { background: #161618; color: #f5f5f7; }
+  a { color: #8ac4ff; }
+  .updated { color: #b3b3bc; }
+  footer { border-color: #45454d; }
+}
+@media print { main { max-width: none; padding: 0; } nav { display: none; } }</style>
+
+</head>
+<body>
+<main>
+<nav aria-label="Language / 语言 / 語言"><a href="index.html" lang="en" hreflang="en" aria-current="page">English</a> <a href="zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a> <a href="zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></nav>
+<header><h1>Popover Support</h1></header>
+<p>Popover answers the system-wide Translate action on iPhone and iPad with Apple’s Foundation Models: the on-device model, and Private Cloud Compute on iOS 27.</p>
+<section aria-labelledby="s0"><h2 id="s0">Requirements</h2><p>An iPhone or iPad that supports Apple Intelligence, running iOS 26 or later, with Apple Intelligence turned on in Settings and the on-device model downloaded.</p><p>Private Cloud Compute needs iOS 27, a network connection and remaining daily quota. On iOS 26 every translation runs on the device.</p></section>
+<section aria-labelledby="s1"><h2 id="s1">Set Popover as the default translator</h2><p>Open Settings ▸ Apps ▸ Default Apps ▸ Translation and choose Popover. The Popover app’s Settings ▸ Help row opens this screen for you.</p><p>Then select any text in Safari, Notes, Mail or another app and tap Translate in the edit menu. Popover’s sheet appears with the translation and, where the host app allows it, a Replace button.</p><p>Deleting Popover resets the default translation app to Apple’s Translate. After reinstalling, pick Popover again in the same Settings screen.</p></section>
+<section aria-labelledby="s2"><h2 id="s2">Engines</h2><p>Automatic (default) tries Private Cloud Compute first and falls back to the on-device model when the cloud is unavailable.</p><p>Cloud Only never falls back; it shows an error when Private Cloud Compute cannot answer. Switch the engine in Popover’s Settings to translate right away.</p><p>On-Device Only keeps every translation on your device.</p></section>
+<section aria-labelledby="s3"><h2 id="s3">Common questions</h2><p>No Translate item in the edit menu: the host app has not offered the system Translate action for that selection, or Popover is not the default translator yet.</p><p>“Needs attention” on the Status tab: turn on Apple Intelligence in Settings and wait for the on-device model to finish downloading, then return to Popover.</p><p>Replace is missing: the host app did not allow replacement for that selection. Use Copy instead.</p><p>Translation refused: the model declined the selected content. This is not a quota problem; Automatic does not fall back for refusals.</p></section>
+<section aria-labelledby="s4"><h2 id="s4">Privacy</h2><p>Popover has no servers, accounts, ads or analytics. Read the <a href="../privacy/index.html">privacy policy</a> for how the on-device model and Private Cloud Compute handle your text.</p></section>
+</main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="This policy covers the Popover app and its system translation extension. Popover uses Apple’s Foundation Models to translate the text you select. It has no account system, developer-operated translation servers, advertising or third-party analytics SDKs. The developer does not receive your selected text or translations.">
+<title>Popover Privacy Policy</title>
+<style>:root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: #1d1d1f; line-height: 1.7; }
+main { max-width: 760px; margin: 0 auto; padding: 40px 24px 64px; }
+nav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-bottom: 36px; }
+a { color: #005bbb; text-underline-offset: 3px; overflow-wrap: anywhere; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 5px; border-radius: 2px; }
+[aria-current="page"] { color: inherit; font-weight: 650; text-decoration: none; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -.025em; margin: 0 0 12px; }
+h2 { font-size: 1.25rem; line-height: 1.4; margin: 32px 0 10px; }
+p { margin: 0 0 16px; overflow-wrap: break-word; }
+.updated { color: #626269; font-size: .95rem; margin-bottom: 28px; }
+footer { border-top: 1px solid #dedee3; margin-top: 36px; padding-top: 4px; }
+ul { padding-inline-start: 22px; }
+li { margin: 8px 0; }
+@media (prefers-color-scheme: dark) {
+  body { background: #161618; color: #f5f5f7; }
+  a { color: #8ac4ff; }
+  .updated { color: #b3b3bc; }
+  footer { border-color: #45454d; }
+}
+@media print { main { max-width: none; padding: 0; } nav { display: none; } }</style>
+</head>
+<body>
+<main>
+<nav aria-label="Language / 语言 / 語言"><a href="index.html" lang="en" hreflang="en" aria-current="page">English</a> <a href="zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a> <a href="zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></nav>
+<header>
+<h1>Popover Privacy Policy</h1>
+<p class="updated">Last updated: September 18, 2026</p>
+</header>
+<p>This policy covers the Popover app and its system translation extension. Popover uses Apple’s Foundation Models to translate the text you select. It has no account system, developer-operated translation servers, advertising or third-party analytics SDKs. The developer does not receive your selected text or translations.</p>
+<section aria-labelledby="on-device">
+<h2 id="on-device">On-device translation</h2>
+<p>When the on-device model answers, your selected text is processed on your device. Popover does not send that text to a translation server. To keep future translation requests on your device, choose On-Device Only under Settings → Translation Engine in Popover. The on-device model must be available on your device.</p>
+</section>
+<section aria-labelledby="cloud">
+<h2 id="cloud">Private Cloud Compute</h2>
+<p>Automatic is the default engine setting. On an eligible device running iOS 27 or later, Automatic tries Apple’s Private Cloud Compute when it is available and has remaining quota. Cloud Only also uses this service. For these requests, the selected text, translation instructions and language information are sent to Apple’s Private Cloud Compute servers to generate the translation.</p>
+<p>Apple states that Private Cloud Compute uses request data only to fulfill the request, does not retain it after processing, and does not make it accessible to Apple. Popover’s developer cannot access this request data. Apple’s documentation is linked below.</p>
+</section>
+<section aria-labelledby="choices">
+<h2 id="choices">Your engine choices</h2>
+<p>Automatic falls back to the on-device model when Private Cloud Compute is unavailable or a temporary failure occurs; a content refusal does not trigger fallback. Cloud Only never falls back, so a cloud failure is shown as an error. On iOS 26, Automatic and On-Device Only use the on-device model; Cloud Only is unavailable. You can change the engine at any time in Popover Settings. Choosing On-Device Only stops future translations from using Private Cloud Compute.</p>
+</section>
+<section aria-labelledby="storage">
+<h2 id="storage">Storage and retention</h2>
+<p>Popover does not save translation history, write selected text or translations to its own files, or include them in app-generated logs in the released app. Text is held temporarily to process and display the current translation. The app saves your language pair, engine choice, cloud reasoning setting and setup-completion flag locally. Language and engine settings are shared only between Popover and its translation extension using their shared app storage.</p>
+<p>There is no translation-history database or developer-side copy to delete. You can change saved preferences in Settings and remove the app to remove its app-local data. Copies held by other apps, the system clipboard or device backups are controlled separately by those apps and Apple.</p>
+</section>
+<section aria-labelledby="copy-replace">
+<h2 id="copy-replace">Copy and Replace</h2>
+<p>Tapping Copy places the translation on the system clipboard, where the system and apps you paste into handle it under their own rules. Tapping Replace sends the translation back to the app where you selected the text. That app controls how the replacement is saved or shared. Popover does not clear or delete copies you place in another app or on the clipboard.</p>
+</section>
+<section aria-labelledby="services">
+<h2 id="services">Tracking and Apple services</h2>
+<p>Popover does not track you across apps or websites, use advertising identifiers, or sell your data. It includes no advertising or third-party analytics SDKs. Apple separately operates the App Store, system diagnostics and Private Cloud Compute under its own privacy terms. This policy describes Popover’s handling of data; it does not replace Apple’s privacy policy. Opening an external link below uses your browser and makes a request to Apple’s website.</p>
+</section>
+<section aria-labelledby="changes">
+<h2 id="changes">Policy changes</h2>
+<p>If Popover’s data handling changes, this policy will be updated along with its last-updated date. The copy in the app reflects the version bundled with that app release.</p>
+</section>
+<footer>
+<h2>Apple’s privacy information</h2>
+<ul><li><a href="https://security.apple.com/documentation/private-cloud-compute/" rel="noreferrer">Private Cloud Compute Security Guide</a></li>
+<li><a href="https://www.apple.com/legal/privacy/" rel="noreferrer">Apple Privacy Policy</a></li></ul>
+</footer>
+</main>
+</body>
+</html>
