@@ -36,25 +36,25 @@ li { margin: 8px 0; }
 <nav aria-label="Language / 语言 / 語言"><a href="index.html" lang="en" hreflang="en">English</a> <a href="zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a> <a href="zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">繁體中文</a></nav>
 <header>
 <h1>Popover隱私權政策</h1>
-<p class="updated">更新日期：2026年9月18日</p>
+<p class="updated">更新日期：2026年9月23日</p>
 </header>
 <p>本政策適用於Popover App及其系統翻譯延伸功能。Popover使用Apple的Foundation Models翻譯你選取的文字。Popover沒有帳號系統、開發者營運的翻譯伺服器、廣告或第三方分析SDK。開發者不會收到你選取的原文或譯文。</p>
 <section aria-labelledby="on-device">
 <h2 id="on-device">裝置端翻譯</h2>
-<p>使用裝置端模型時，你選取的文字會在裝置上處理，Popover不會將這些文字傳送到翻譯伺服器。如要讓之後的翻譯請求都在裝置上處理，請在Popover的「設定」→「翻譯引擎」中選擇「僅裝置端」。裝置上的模型必須處於可用狀態。</p>
+<p>使用裝置端模型時，你選取的文字會在裝置上處理，Popover不會將這些文字傳送到翻譯伺服器。如要讓之後的翻譯請求都在裝置上處理，請在Popover的「設定」▸「翻譯引擎」中選擇「僅裝置端」。裝置上的模型必須處於可用狀態。</p>
 </section>
 <section aria-labelledby="cloud">
 <h2 id="cloud">私密雲端運算</h2>
-<p>引擎預設為「自動」。在執行iOS 27或以上版本且符合條件的裝置上，「自動」會在Apple私密雲端運算可用且有剩餘配額時優先使用它。「僅雲端」也使用此服務。處理這些請求時，選取的文字、翻譯指示和語言資訊會傳送到Apple的私密雲端運算伺服器，以產生譯文。</p>
+<p>引擎預設為「自動」。在執行iOS 27、iPadOS 27或以上版本且符合條件的裝置上，「自動」會在Apple私密雲端運算可用且有剩餘配額時優先使用它。「僅雲端」也使用此服務。處理這些請求時，選取的文字、翻譯指示和語言資訊會傳送到Apple的私密雲端運算伺服器，以產生譯文。</p>
 <p>Apple聲明，私密雲端運算只會使用請求資料來完成該次請求，處理結束後不會保留這些資料，Apple也無法取用這些資料。Popover開發者無法取用這些請求資料。下方提供了Apple的說明連結。</p>
 </section>
 <section aria-labelledby="choices">
 <h2 id="choices">選擇翻譯引擎</h2>
-<p>私密雲端運算無法使用或發生暫時性故障時，「自動」會改用裝置端模型；內容遭拒絕翻譯時不會改用裝置端模型。「僅雲端」不會改用裝置端模型，雲端失敗時會顯示錯誤。在iOS 26上，「自動」和「僅裝置端」使用裝置端模型，「僅雲端」無法使用。你可以隨時在Popover設定中更改引擎。選擇「僅裝置端」後，之後的翻譯不會使用私密雲端運算。</p>
+<p>私密雲端運算無法使用或發生暫時性故障時，「自動」會改用裝置端模型；內容遭拒絕翻譯時不會改用裝置端模型。「僅雲端」不會改用裝置端模型，雲端失敗時會顯示錯誤。在iOS 26或iPadOS 26上，「自動」和「僅裝置端」使用裝置端模型，「僅雲端」無法使用。你可以隨時在Popover設定中更改引擎。選擇「僅裝置端」後，之後的翻譯不會使用私密雲端運算。</p>
 </section>
 <section aria-labelledby="storage">
 <h2 id="storage">儲存與保留</h2>
-<p>Popover不儲存翻譯記錄，不將原文或譯文寫入自己的檔案，也不會在正式發佈的App所產生的日誌中記錄這些內容。文字僅為處理和顯示目前的翻譯而暫存在記憶體中。App會在本機儲存你的語言配對、引擎選擇、雲端推理設定，以及是否完成引導的標記。語言和引擎設定僅透過共用App儲存空間，在Popover與其翻譯延伸功能之間共享。</p>
+<p>Popover不儲存翻譯記錄，不將原文或譯文寫入自己的檔案，也不會在正式發佈的App所產生的日誌中記錄這些內容。文字僅為處理和顯示目前的翻譯而暫存在記憶體中。App會在本機儲存你的語言配對、引擎選擇、雲端推理設定，以及引導完成狀態。語言和引擎設定只在Popover與其翻譯延伸功能之間共享，兩者透過App共用儲存空間讀取這些設定。</p>
 <p>Popover沒有需要刪除的翻譯記錄資料庫，也沒有開發者持有的譯文副本。你可以在設定中更改偏好，或刪除App以移除其本機資料。其他App、系統剪貼板或裝置備份中保留的副本，由相應App及Apple另行管理。</p>
 </section>
 <section aria-labelledby="copy-replace">
@@ -67,7 +67,7 @@ li { margin: 8px 0; }
 </section>
 <section aria-labelledby="changes">
 <h2 id="changes">政策更新</h2>
-<p>如果Popover的資料處理方式改變，我們會更新本政策及其更新日期。App內的政策副本對應隨該App版本提供的內容。</p>
+<p>如果Popover的資料處理方式改變，我們會更新本政策及其更新日期。App內顯示的是隨該版本提供的隱私權政策。</p>
 </section>
 <footer>
 <h2>Apple隱私權說明</h2>

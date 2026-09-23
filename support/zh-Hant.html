@@ -35,14 +35,14 @@ li { margin: 8px 0; }
 <body>
 <main>
 <nav aria-label="Language / 语言 / 語言"><a href="index.html" lang="en" hreflang="en">English</a> <a href="zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a> <a href="zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">繁體中文</a></nav>
-<header><h1>Popover 支援</h1></header>
-<p>Popover 以 Apple 的 Foundation Models 接手 iPhone 和 iPad 上系統層級的「翻譯」動作：裝置端模型，以及 iOS 27 上的私密雲端運算。</p>
-<section aria-labelledby="s0"><h2 id="s0">使用需求</h2><p>支援 Apple Intelligence 的 iPhone 或 iPad，執行 iOS 26 或以上版本，已在「設定」中開啟 Apple Intelligence 並下載好裝置端模型。</p><p>私密雲端運算需要 iOS 27、網路連線和當日剩餘配額。在 iOS 26 上，每次翻譯都在裝置上完成。</p></section>
-<section aria-labelledby="s1"><h2 id="s1">把 Popover 設為預設翻譯 App</h2><p>打開 設定 ▸ App ▸ 預設 App ▸ 翻譯，選擇 Popover。Popover 的 設定 ▸ 輔助說明 可以直接帶你到這一頁。</p><p>然後在 Safari、備忘錄、郵件等 App 裡選取文字，在編輯選單點「翻譯」。Popover 的視窗會顯示譯文；主機 App 允許時還會有「取代」按鈕。</p><p>刪除 Popover 會讓系統把預設翻譯 App 重設回 Apple 的「翻譯」。重新安裝後請在同一設定頁重新選擇 Popover。</p></section>
-<section aria-labelledby="s2"><h2 id="s2">翻譯引擎</h2><p>「自動」（預設）優先使用私密雲端運算，雲端無法使用時退回裝置端模型。</p><p>「僅雲端」從不退回；私密雲端運算無法回應時會顯示錯誤。此時在 Popover 設定中切換引擎即可立即翻譯。</p><p>「僅裝置端」讓每次翻譯都留在裝置上。</p></section>
-<section aria-labelledby="s3"><h2 id="s3">常見問題</h2><p>編輯選單裡沒有「翻譯」：主機 App 沒有為這段選取範圍提供系統翻譯動作，或 Popover 還不是預設翻譯 App。</p><p>狀態頁顯示「需要注意」：在「設定」中開啟 Apple Intelligence，等裝置端模型下載完成後再回到 Popover。</p><p>沒有「取代」按鈕：主機 App 不允許取代這段選取範圍，請改用「拷貝」。</p><p>翻譯被拒絕：模型拒絕處理所選內容。這與配額無關，「自動」不會因拒絕而退回。</p></section>
-<section aria-labelledby="s4"><h2 id="s4">隱私</h2><p>Popover 沒有伺服器、帳號、廣告或分析元件。裝置端模型與私密雲端運算如何處理你的文字，請閱讀<a href="../privacy/zh-Hant.html">隱私權政策</a>。</p></section>
-<section aria-labelledby="s5"><h2 id="s5">聯絡</h2><p>有問題或建議：<a href="mailto:support@bxuan.me">support@bxuan.me</a>。請附上 iPhone 機型、iOS 版本和當時在哪個 App 裡翻譯。</p></section>
+<header><h1>Popover支援</h1></header>
+<p>在iPhone或iPad上，Popover可以翻譯你在其他App中選取的文字。原App需要提供系統「翻譯」動作。Apple Intelligence在裝置端或透過私密雲端運算產生譯文。</p>
+<section aria-labelledby="s0"><h2 id="s0">使用需求</h2><p>使用支援Apple Intelligence的iPhone或iPad，執行iOS 26、iPadOS 26或以上版本，並開啟Apple Intelligence。使用裝置端翻譯時，裝置端模型必須處於就緒狀態。</p><p>私密雲端運算需要iOS 27、iPadOS 27或以上版本、網路連線及剩餘每日配額。在iOS 26和iPadOS 26上，「自動」和「僅裝置端」使用裝置端模型，「僅雲端」無法使用。</p></section>
+<section aria-labelledby="s1"><h2 id="s1">將Popover設為預設翻譯App</h2><p>打開「設定」▸「App」▸「預設App」▸「翻譯」，選擇Popover。Popover設定中的「設定指引」一列會顯示這些步驟。其中的「打開設定」按鈕會開啟Popover的系統設定頁面；請返回「App」，再開啟「預設App」中的「翻譯」。</p><p>在提供系統「翻譯」動作的App中選取文字，點一下「翻譯」即可查看Popover的譯文。翻譯成功完成，且原App允許取代該選取範圍時，「取代」按鈕才可用。</p><p>刪除Popover會將預設翻譯App重設為Apple的「翻譯」。重新安裝後，請在同一設定頁面重新選擇Popover。</p></section>
+<section aria-labelledby="s2"><h2 id="s2">翻譯引擎</h2><p>預設的「自動」會在可用且仍有剩餘配額時使用私密雲端運算；在其他情況下或雲端請求失敗時，則使用裝置端模型。Apple Intelligence拒絕翻譯文字時，不會切換引擎。</p><p>「僅雲端」不會改用裝置端模型。私密雲端運算無法完成翻譯時，會顯示錯誤。你可以在Popover的設定中選擇「僅裝置端」，在模型就緒後再次嘗試翻譯。</p><p>「僅裝置端」在你的裝置上處理每次翻譯，模型就緒後可離線使用。</p></section>
+<section aria-labelledby="s3"><h2 id="s3">常見問題</h2><p>編輯選單裡沒有「翻譯」：原App可能沒有為這段選取範圍提供系統「翻譯」動作，可以嘗試在另一個App中選取文字。如果點一下「翻譯」後開啟的是Apple的「翻譯」App，請確認已將Popover設為預設翻譯App。</p><p>狀態頁顯示「需要注意」：標題下方的一行會說明具體問題，例如裝置不支援、Apple Intelligence未開啟，或模型尚未就緒。</p><p>「取代」無法使用：請等待翻譯完成。發生錯誤或原App不允許取代時，該按鈕也會停用。你可以改為拷貝已完成的譯文。</p><p>「Apple Intelligence拒絕翻譯這段文字」：這種情況下，「自動」不會改用裝置端模型。請改選其他內容試試。</p></section>
+<section aria-labelledby="s4"><h2 id="s4">隱私</h2><p>Popover沒有開發者營運的翻譯伺服器、帳號、廣告或分析元件。裝置端模型和私密雲端運算如何處理你的文字，請閱讀<a href="../privacy/zh-Hant.html">隱私權政策</a>。</p></section>
+<section aria-labelledby="s5"><h2 id="s5">聯絡</h2><p>如有問題，請寄信至<a href="mailto:support@bxuan.me">support@bxuan.me</a>，並附上iPhone或iPad機型、iOS或iPadOS版本、Popover版本，以及當時使用的App。</p></section>
 </main>
 </body>
 </html>

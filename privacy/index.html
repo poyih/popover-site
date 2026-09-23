@@ -36,26 +36,26 @@ li { margin: 8px 0; }
 <nav aria-label="Language / 语言 / 語言"><a href="index.html" lang="en" hreflang="en" aria-current="page">English</a> <a href="zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a> <a href="zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></nav>
 <header>
 <h1>Popover Privacy Policy</h1>
-<p class="updated">Last updated: September 18, 2026</p>
+<p class="updated">Last updated: September 23, 2026</p>
 </header>
 <p>This policy covers the Popover app and its system translation extension. Popover uses Apple’s Foundation Models to translate the text you select. It has no account system, developer-operated translation servers, advertising or third-party analytics SDKs. The developer does not receive your selected text or translations.</p>
 <section aria-labelledby="on-device">
 <h2 id="on-device">On-device translation</h2>
-<p>When the on-device model answers, your selected text is processed on your device. Popover does not send that text to a translation server. To keep future translation requests on your device, choose On-Device Only under Settings → Translation Engine in Popover. The on-device model must be available on your device.</p>
+<p>When the on-device model answers, your selected text is processed on your device. Popover does not send that text to a translation server. To keep future translation requests on your device, choose On-Device Only under Settings ▸ Translation Engine in Popover. The on-device model must be available on your device.</p>
 </section>
 <section aria-labelledby="cloud">
 <h2 id="cloud">Private Cloud Compute</h2>
-<p>Automatic is the default engine setting. On an eligible device running iOS 27 or later, Automatic tries Apple’s Private Cloud Compute when it is available and has remaining quota. Cloud Only also uses this service. For these requests, the selected text, translation instructions and language information are sent to Apple’s Private Cloud Compute servers to generate the translation.</p>
+<p>Automatic is the default engine setting. On an eligible device running iOS 27 or iPadOS 27 or later, Automatic tries Apple’s Private Cloud Compute when it is available and has remaining quota. Cloud Only also uses this service. For these requests, the selected text, translation instructions and language information are sent to Apple’s Private Cloud Compute servers to generate the translation.</p>
 <p>Apple states that Private Cloud Compute uses request data only to fulfill the request, does not retain it after processing, and does not make it accessible to Apple. Popover’s developer cannot access this request data. Apple’s documentation is linked below.</p>
 </section>
 <section aria-labelledby="choices">
 <h2 id="choices">Your engine choices</h2>
-<p>Automatic falls back to the on-device model when Private Cloud Compute is unavailable or a temporary failure occurs; a content refusal does not trigger fallback. Cloud Only never falls back, so a cloud failure is shown as an error. On iOS 26, Automatic and On-Device Only use the on-device model; Cloud Only is unavailable. You can change the engine at any time in Popover Settings. Choosing On-Device Only stops future translations from using Private Cloud Compute.</p>
+<p>Automatic falls back to the on-device model when Private Cloud Compute is unavailable or a temporary failure occurs; a content refusal does not trigger fallback. Cloud Only never falls back, so a cloud failure is shown as an error. On iOS 26 or iPadOS 26, Automatic and On-Device Only use the on-device model; Cloud Only is unavailable. You can change the engine at any time in Popover Settings. Choosing On-Device Only stops future translations from using Private Cloud Compute.</p>
 </section>
 <section aria-labelledby="storage">
 <h2 id="storage">Storage and retention</h2>
-<p>Popover does not save translation history, write selected text or translations to its own files, or include them in app-generated logs in the released app. Text is held temporarily to process and display the current translation. The app saves your language pair, engine choice, cloud reasoning setting and setup-completion flag locally. Language and engine settings are shared only between Popover and its translation extension using their shared app storage.</p>
-<p>There is no translation-history database or developer-side copy to delete. You can change saved preferences in Settings and remove the app to remove its app-local data. Copies held by other apps, the system clipboard or device backups are controlled separately by those apps and Apple.</p>
+<p>Popover does not save translation history, write selected text or translations to its own files, or include them in app-generated logs in the released app. Text is held temporarily to process and display the current translation. The app saves your language pair, engine choice, cloud reasoning setting and setup-completion status locally. Language and engine settings are shared only between Popover and its translation extension using their shared app storage.</p>
+<p>There is no translation-history database or developer-side copy to delete. You can change saved preferences in Settings. Deleting the app removes its local data. Copies held by other apps, the system clipboard or device backups are controlled separately by those apps and Apple.</p>
 </section>
 <section aria-labelledby="copy-replace">
 <h2 id="copy-replace">Copy and Replace</h2>
