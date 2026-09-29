@@ -36,7 +36,7 @@ li { margin: 8px 0; }
 <nav aria-label="Language / 语言 / 語言"><a href="index.html" lang="en" hreflang="en" aria-current="page">English</a> <a href="zh-Hans.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a> <a href="zh-Hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></nav>
 <header>
 <h1>Popover Privacy Policy</h1>
-<p class="updated">Last updated: September 24, 2026</p>
+<p class="updated">Last updated: September 27, 2026</p>
 </header>
 <p>This policy covers the Popover app and its system translation extension. Popover uses Apple’s Foundation Models to translate the text you select. It has no account system, developer-operated translation servers, advertising or third-party analytics SDKs. The developer does not receive your selected text or translations.</p>
 <section aria-labelledby="on-device">
@@ -50,12 +50,12 @@ li { margin: 8px 0; }
 </section>
 <section aria-labelledby="choices">
 <h2 id="choices">Your engine choices</h2>
-<p>Automatic falls back to the on-device model when Private Cloud Compute is unavailable, a temporary failure occurs, or its safety filter blocks the request. Cloud Only never falls back, so a cloud failure is shown as an error. On iOS 26 or iPadOS 26, Automatic and On-Device Only use the on-device model; Cloud Only is unavailable. You can change the engine at any time in Popover Settings. Choosing On-Device Only stops future translations from using Private Cloud Compute.</p>
+<p>Automatic falls back to the on-device model when Private Cloud Compute is unavailable, a temporary failure occurs, or its safety filter blocks the request. Cloud Only never falls back, so a cloud failure is shown as an error. On iOS 26 or iPadOS 26, Automatic and On-Device Only use the on-device model; Cloud Only is unavailable. You can change the engine at any time in Popover Settings.</p>
 </section>
 <section aria-labelledby="storage">
 <h2 id="storage">Storage and retention</h2>
-<p>Popover does not save translation history, write selected text or translations to its own files, or include them in app-generated logs in the released app. Text is held temporarily to process and display the current translation. The app saves your language pair, engine choice, cloud reasoning setting and setup-completion status locally. Language and engine settings are shared only between Popover and its translation extension using their shared app storage.</p>
-<p>There is no translation-history database or developer-side copy to delete. You can change saved preferences in Settings. Deleting the app removes its local data. Copies held by other apps, the system clipboard or device backups are controlled separately by those apps and Apple.</p>
+<p>Popover does not save translation history, write selected text or translations to its own files, or include them in app-generated logs in the released app. Text is held temporarily to process and display the current translation. The app saves your language pair, engine choice, cloud reasoning setting and setup-completion status locally. It also keeps a usage record on this device: the number of finished translations and the time of the most recent one. When Apple reports that the daily Private Cloud Compute quota has been reached, the record notes this and the expected reset time. The Status screen shows the record, and the app uses the count to decide when to ask for an App Store rating. The record contains no text and stays on the device. Language and engine settings and the usage record are shared only between Popover and its translation extension, through their shared app storage.</p>
+<p>There is no translation-history database or developer-side copy to delete. You can change saved preferences in Settings. Deleting the app removes its local data, including the usage record. Copies held by other apps, the system clipboard or device backups are controlled separately by those apps and Apple.</p>
 </section>
 <section aria-labelledby="copy-replace">
 <h2 id="copy-replace">Copy and Replace</h2>
@@ -67,7 +67,7 @@ li { margin: 8px 0; }
 </section>
 <section aria-labelledby="changes">
 <h2 id="changes">Policy changes</h2>
-<p>If Popover’s data handling changes, this policy will be updated along with its last-updated date. The copy in the app reflects the version bundled with that app release.</p>
+<p>If Popover’s data handling changes, this policy will be updated along with its last-updated date. The app shows the version that shipped with it.</p>
 </section>
 <footer>
 <h2>Apple’s privacy information</h2>
